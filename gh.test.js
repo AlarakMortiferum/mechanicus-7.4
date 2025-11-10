@@ -33,7 +33,7 @@ describe('Github page tests', () => {
 
 describe('Additional page tests', () => {
   test('GitHub main page title', async () => {
-    page = await browser.newPage();
+    const page = await browser.newPage();
     await page.goto('https://github.com');
     const title = await page.title();
     expect(title).toContain('GitHub: Let\'s build from here');
@@ -41,7 +41,7 @@ describe('Additional page tests', () => {
   }, 10000);
 
   test('GitHub pricing page', async () => {
-    page = await browser.newPage();
+    const page = await browser.newPage();
     await page.goto('https://github.com/pricing');
     const header = await page.$('h1');
     const text = await header.evaluate(element => element.textContent);
@@ -50,7 +50,7 @@ describe('Additional page tests', () => {
   }, 10000);
 
   test('GitHub features page', async () => {
-    page = await browser.newPage();
+    const page = await browser.newPage();
     await page.goto('https://github.com/features');
     const header = await page.$('h1');
     const text = await header.evaluate(element => element.textContent);

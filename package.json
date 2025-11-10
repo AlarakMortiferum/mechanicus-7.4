@@ -1,7 +1,7 @@
 {
   "name": "java_7.4",
   "version": "1.0.0",
-  "description": "",
+  "description": "Puppeteer tests for GitHub pages",
   "main": "index.js",
   "scripts": {
     "test": "jest"
